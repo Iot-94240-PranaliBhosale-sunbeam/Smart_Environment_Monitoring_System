@@ -4,6 +4,10 @@ multiple environmental parameters using sensors and cloud visualization.
 The system is modular and scalable, allowing easy integration of additional sensors
 as per project requirements.
 
+## Documentation
+System architecture and protocol-related documentation is available
+in the `docs/` directory.
+
 ## 🔧 Hardware Components
 - ESP32 Development Board
 - Environmental Sensors (DHT11, MQ2 – currently implemented)
