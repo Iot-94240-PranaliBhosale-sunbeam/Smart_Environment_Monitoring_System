@@ -8,6 +8,14 @@ as per project requirements.
 System architecture and protocol-related documentation is available
 in the `docs/` directory.
 
+ESP32 sensor data (DHT11, MQ2) is transmitted to ThingSpeak using HTTP protocol.
+MQTT testing was attempted but limited due to network port restrictions.
+MQTT integration is planned on BeagleBone Black with local broker and MySQL backend.
+
+## Live Output Preview
+![ThingSpeak Dashboard](esp32/screenshots/thingspeak_dashboard.png)
+
+
 ## 🔧 Hardware Components
 - ESP32 Development Board
 - Environmental Sensors (DHT11, MQ2 – currently implemented)
