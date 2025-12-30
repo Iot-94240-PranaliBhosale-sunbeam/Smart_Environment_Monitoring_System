@@ -1,0 +1,4 @@
+- BeagleBone connected via USB (Remote NDIS)
+- Internet shared from Windows to BeagleBone
+- MQTT broker: test.mosquitto.org
+- Verified real-time ESP32 data reception

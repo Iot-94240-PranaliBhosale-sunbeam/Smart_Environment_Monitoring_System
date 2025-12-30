@@ -1,0 +1,4 @@
+sudo dhclient usb0
+ip route
+ping 8.8.8.8
+mosquitto_sub -h test.mosquitto.org -t env/esp32/data -v
