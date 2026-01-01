@@ -16,6 +16,18 @@ MQTT integration is planned on BeagleBone Black with local broker and MySQL back
 ![ThingSpeak Dashboard](esp32/screenshots/thingspeak_dashboard.png)
 
 
+### Objective
+Establish real-time MQTT communication between ESP32 and BeagleBone.
+
+### Workflow
+ESP32 → MQTT Broker → BeagleBone
+
+### Outcome
+- Continuous data publishing from ESP32
+- Successful MQTT subscription on BeagleBone
+- Internet connectivity verified
+
+
 ## 🔧 Hardware Components
 - ESP32 Development Board
 - Environmental Sensors (DHT11, MQ2 – currently implemented)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Environment Dashboard</title>
+
+    <!-- Auto refresh every 5 seconds -->
+    <meta http-equiv="refresh" content="5">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    🌍 Smart Environment Monitoring
+</header>
+
+<!-- Live Cards -->
+<div class="cards">
+    <div class="card temp">
+        Temperature<br>
+        <span>{{ latest.temperature }} °C</span>
+    </div>
+
+    <div class="card hum">
+        Humidity<br>
+        <span>{{ latest.humidity }} %</span>
+    </div>
+
+    <div class="card gas">
+        Gas<br>
+        <span>{{ latest.gas }} ppm</span>
+    </div>
+</div>
+
+<!-- Table -->
+<h2>📊 SENSORS_data Log</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Temperature (°C)</th>
+        <th>Humidity (%)</th>
+        <th>Gas (ppm)</th>
+    </tr>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{ row.id }}</td>
+        <td>{{ row.temperature }}</td>
+        <td>{{ row.humidity }}</td>
+        <td>{{ row.gas }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
